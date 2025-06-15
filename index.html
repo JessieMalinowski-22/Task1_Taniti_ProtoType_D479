@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taniti Island</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome (for icons like the hamburger menu) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-papm6dRHG4v5rOf63fNfOe5MHldKmPl+jAkTQgAOvJVLmqwOpNjhMJph7I7TYzN2WmIxU++mdz6bZ+mdltjPYg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      body {
+        padding-top: 80px;
+      }
+
+      #mainNav {
+        background-color: #008080; /* Taniti color scheme */
+      }
+
+      #mainNav .nav-link,
+      #mainNav .navbar-brand {
+        color: white !important;
+      }
+
+      #mainNav .nav-link:hover {
+        background-color: #00b3b3;
+        color: white !important;
+      }
+      .btn-warning:hover {
+        background-color: #ffcc00 !important;
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light text-uppercase fixed-top"
+      id="mainNav"
+    >
+      <div class="container">
+        <a class="navbar-brand mx-0 mx-auto" href="./index.html"
+          >TANITI ISLAND</a
+        >
+        <button
+          class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded"
+                href="pages/about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded"
+                href="pages/entertainment.html"
+                >Entertainment</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded"
+                href="pages/dining.html"
+                >Dining</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded"
+                href="pages/lodging.html"
+                >Lodging</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded"
+                href="pages/transportation.html"
+                >Transportation</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- This will be the Main section of the Homepage -->
+    <section class="container py-5" id="about">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4">
+          <img
+            src="./assets/pexels-asadphoto-1268855.jpg"
+            alt="Taniti Landscape"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h2 class="mb-3 text-secondary">About Taniti Island</h2>
+          <p>
+            Taniti is a small, tropical island in the Pacific with an area of
+            less than 500 square miles. Its terrain includes sandy and rocky
+            beaches, a small harbor, rainforests, and a mountainous interior
+            with an active volcano.
+          </p>
+          <p>
+            With a native population of around 20,000, Taniti has recently
+            shifted from a fishing and agricultural economy to one driven by
+            tourism. Visitors enjoy lush landscapes, cultural sites, and a
+            welcoming atmosphere.
+          </p>
+
+          <div class="text-center mt-4">
+            <button
+              class="btn btn-warning btn-lg shadow-lg px-5 py-2 rounded-pill"
+              data-bs-toggle="modal"
+              data-bs-target="#bookingModal"
+              style="font-weight: bold; transition: all 0.3s ease"
+            >
+              Book Your Vacation Now!
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md-4 mb-4">
+          <img
+            src="./assets/pexels-solliefoto-299348.jpg"
+            alt="Local Food"
+            class="img-fluid rounded shadow"
+          />
+          <h5 class="mt-3 text-info">Dining</h5>
+          <p>
+            Enjoy 10 restaurants serving local seafood, American-style dishes,
+            and Pan-Asian cuisine.
+          </p>
+          <div class="text-center mt-3">
+            <a href="pages/dining.html" class="btn btn-outline-warning px-4"
+              >Explore More Dining Options</a
+            >
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img
+            src="./assets/pexels-pixabay-208701.jpg"
+            alt="Scenic Views"
+            class="img-fluid rounded shadow"
+          />
+          <h5 class="mt-3 text-info">Entertainment</h5>
+          <p>
+            Zip-lining, snorkeling, museum visits, and rainforest hikes await.
+            Explore Merriton Landing or see a live volcano!
+          </p>
+          <div class="text-center mt-3">
+            <a
+              href="pages/entertainment.html"
+              class="btn btn-outline-success px-4"
+              >Discover More Activities</a
+            >
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img
+            src="./assets/pexels-ellis-1210622.jpg"
+            alt="Transport"
+            class="img-fluid rounded shadow"
+          />
+          <h5 class="mt-3 text-info">Getting Around</h5>
+          <p>
+            Walkable zones, public buses, taxis, and rental cars make Taniti
+            easy to explore—even with kids in tow.
+          </p>
+          <div class="text-center mt-3">
+            <a
+              href="pages/transportation.html"
+              class="btn btn-outline-info px-4"
+              >See Transportation Options</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <!-- Quick Links -->
+          <div class="col-md-4 mb-3">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="pages/about.html"
+                  class="text-white text-decoration-none"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="pages/entertainment.html"
+                  class="text-white text-decoration-none"
+                  >Entertainment</a
+                >
+              </li>
+              <li>
+                <a
+                  href="pages/dining.html"
+                  class="text-white text-decoration-none"
+                  >Dining</a
+                >
+              </li>
+              <li>
+                <a
+                  href="pages/lodging.html"
+                  class="text-white text-decoration-none"
+                  >Lodging</a
+                >
+              </li>
+              <li>
+                <a
+                  href="pages/transportation.html"
+                  class="text-white text-decoration-none"
+                  >Transportation</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Media -->
+          <div class="col-md-4 mb-3">
+            <h5>Connect With Us</h5>
+            <a href="#" class="text-white me-3" aria-label="Facebook">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 512 512"
+                style="fill: currentColor"
+              >
+                <g>
+                  <path
+                    d="M512,256c0,-141.385 -114.615,-256 -256,-256c-141.385,0 -256,114.615 -256,256c0,127.777 93.616,233.685 216,252.89l0,-178.89l-65,0l0,-74l65,0l0,-56.4c0,-64.16 38.219,-99.6 96.695,-99.6c28.009,0 57.305,5 57.305,5l0,63l-32.281,0c-31.801,0 -41.719,19.733 -41.719,39.978l0,48.022l71,0l-11.35,74l-59.65,0l0,178.89c122.385,-19.205 216,-125.113 216,-252.89Z"
+                    fill="#1877f2"
+                  />
+                  <path
+                    d="M355.65,330l11.35,-74l-71,0l0,-48.022c0,-20.245 9.917,-39.978 41.719,-39.978l32.281,0l0,-63c0,0 -29.297,-5 -57.305,-5c-58.476,0 -96.695,35.44 -96.695,99.6l0,56.4l-65,0l0,74l65,0l0,178.89c13.033,2.045 26.392,3.11 40,3.11c13.608,0 26.966,-1.065 40,-3.11l0,-178.89l59.65,0Z"
+                    fill="#ffffff"
+                  />
+                </g>
+              </svg>
+            </a>
+
+            <a href="#" class="text-white me-3" aria-label="Twitter">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 512 512"
+                style="fill: currentColor"
+              >
+                <g>
+                  <path
+                    d="M448,512l-384,0c-35.328,0 -64,-28.672 -64,-64l0,-384c0,-35.328 28.672,-64 64,-64l384,0c35.328,0 64,28.672 64,64l0,384c0,35.328 -28.672,64 -64,64Z"
+                    fill="#1da1f2"
+                  />
+                  <path
+                    d="M196.608,386.048c120.704,0 186.752,-100.096 186.752,-186.752c0,-2.816 0,-5.632 -0.128,-8.448c12.8,-9.216 23.936,-20.864 32.768,-34.048c-11.776,5.248 -24.448,8.704 -37.76,10.368c13.568,-8.064 23.936,-20.992 28.928,-36.352c-12.672,7.552 -26.752,12.928 -41.728,15.872c-12.032,-12.8 -29.056,-20.736 -47.872,-20.736c-36.224,0 -65.664,29.44 -65.664,65.664c0,5.12 0.64,10.112 1.664,14.976c-54.528,-2.688 -102.912,-28.928 -135.296,-68.608c-5.632,9.728 -8.832,20.992 -8.832,33.024c0,22.784 11.648,42.88 29.184,54.656c-10.752,-0.384 -20.864,-3.328 -29.696,-8.192l0,0.896c0,31.744 22.656,58.368 52.608,64.384c-5.504,1.536 -11.264,2.304 -17.28,2.304c-4.224,0 -8.32,-0.384 -12.288,-1.152c8.32,26.112 32.64,45.056 61.312,45.568c-22.528,17.664 -50.816,28.16 -81.536,28.16c-5.248,0 -10.496,-0.256 -15.616,-0.896c28.928,18.432 63.488,29.312 100.48,29.312"
+                    fill="#ffffff"
+                  />
+                </g>
+              </svg>
+            </a>
+
+            <a href="#" class="text-white me-3" aria-label="YouTube">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 512 512"
+                style="fill: currentColor"
+              >
+                <g>
+                  <path
+                    d="M501.299,132.766c-5.888,-22.03 -23.234,-39.377 -45.264,-45.264c-39.932,-10.701 -200.037,-10.701 -200.037,-10.701c0,0 -160.105,0 -200.038,10.701c-22.025,5.887 -39.376,23.234 -45.264,45.264c-10.696,39.928 -10.696,123.236 -10.696,123.236c0,0 0,83.308 10.696,123.232c5.888,22.03 23.239,39.381 45.264,45.268c39.933,10.697 200.038,10.697 200.038,10.697c0,0 160.105,0 200.037,-10.697c22.03,-5.887 39.376,-23.238 45.264,-45.268c10.701,-39.924 10.701,-123.232 10.701,-123.232c0,0 0,-83.308 -10.701,-123.236Z"
+                    fill="#ed1f24"
+                  />
+                  <path
+                    d="M204.796,332.803l133.018,-76.801l-133.018,-76.801l0,153.602Z"
+                    fill="#ffffff"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Address -->
+          <div class="col-md-4 mb-3">
+            <h5>Visit Us</h5>
+            <p class="mb-0">123 Paradise Way</p>
+            <p class="mb-0">Taniti Island, Pacific Ocean</p>
+            <p>Email: info@visit-taniti.com</p>
+          </div>
+        </div>
+        <div class="text-center pt-3 border-top border-light mt-3">
+          <small>&copy; 2025 Taniti Tourism Bureau. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="modal fade"
+      id="bookingModal"
+      tabindex="-1"
+      aria-labelledby="bookingModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title" id="bookingModalLabel">
+              Book Your Trip to Taniti
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <form>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="emailAddress" class="form-label"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailAddress"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="arrivalDate" class="form-label">Arrival Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="arrivalDate"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="guests" class="form-label">Number of Guests</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="guests"
+                  min="1"
+                  required
+                />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-success">
+                Confirm Booking
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
